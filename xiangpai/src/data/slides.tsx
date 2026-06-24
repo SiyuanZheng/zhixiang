@@ -193,14 +193,55 @@ export const slides: SlideData[] = [
     )
   },
 
-  // Slide 8 - 情绪住在五脏里
+  // Slide 8 - 互动一：情绪卡破冰
   {
     id: 8,
-    partName: "三、情绪与五行",
+    partName: "三、互动环节一・情绪卡破冰",
+    content: (
+      <div className="max-w-4xl mx-auto flex flex-col justify-center">
+        <h2 className={textTitle}>情绪卡・破冰</h2>
+        <p className="text-lg text-[rgb(130,130,130)] tracking-widest mb-6 text-center">约 5-8 分钟</p>
+        <div className={textBody}>
+          <p className="mb-4">好，刚才我们了解了香与情绪的历史渊源。现在邀请大家做一个简单的小互动。</p>
+          <p className="mb-4">请看自己手边的情绪卡，上面写有：</p>
+          <div className="flex flex-wrap gap-3 mb-6 justify-center">
+            {['悲伤', '愤怒', '恐惧', '焦虑', '思虑', '孤独', '委屈', '压抑'].map((e, i) => {
+              const colors = ['rgb(100,100,100)', 'rgb(46,139,87)', 'rgb(25,25,112)', 'rgb(180,140,20)', 'rgb(178,34,34)', 'rgb(130,90,180)', 'rgb(160,80,40)', 'rgb(70,70,70)'];
+              return (
+                <span key={e} className="bg-white border rounded-full px-5 py-2 text-base font-bold tracking-widest" style={{ borderColor: `${colors[i]}40`, color: colors[i] }}>
+                  {e}
+                </span>
+              );
+            })}
+          </div>
+          <p className="mb-4 font-bold text-[rgb(44,44,44)]">和身边小伙伴简单分享两件事：</p>
+          <div className="flex flex-col gap-3">
+            <div className="flex gap-4 items-start bg-white border border-[rgb(235,235,235)] rounded-xl p-4 shadow-sm">
+              <span className="text-xl font-bold text-[#856d4d]">①</span>
+              <p>你最近有没有一个很小的瞬间，跟这个情绪有关？哪怕只是昨天等车时的一阵烦躁，或听到某首歌时的一阵难过。</p>
+            </div>
+            <div className="flex gap-4 items-start bg-white border border-[rgb(235,235,235)] rounded-xl p-4 shadow-sm">
+              <span className="text-xl font-bold text-[#856d4d]">②</span>
+              <p>如果用一个颜色、一个形状来形容这种情绪在你身体里的位置，它在哪里？胸口？喉咙？肩膀？还是胃？</p>
+            </div>
+          </div>
+          <div className="mt-6 text-[rgb(120,120,120)] border-l-[4px] border-[rgb(180,180,180)] pl-6 bg-[rgba(0,0,0,0.02)] py-4 pr-6 rounded-r-xl">
+            <p>大家会发现：情绪不是抽象的概念，它就住在我们的身体里。而等一下我们要做的香牌，恰恰就是通过香气，去和这些住在身体里的情绪对话。</p>
+          </div>
+        </div>
+      </div>
+    )
+  },
+
+  // Slide 9 - 情绪住在五脏里
+  {
+    id: 9,
+    partName: "四、认识情绪香粉",
     content: (
       <div className="max-w-6xl mx-auto flex flex-col justify-center items-center text-center">
-        <h2 className={textTitle}>情绪住在五脏里</h2>
-        <p className="text-lg text-[rgb(110,110,110)] tracking-widest mb-8">在中医体系中，五行、脏腑与情绪紧密相连</p>
+        <h2 className={textTitle}>认识情绪香粉</h2>
+        <p className="text-lg text-[rgb(110,110,110)] tracking-widest mb-4">现在我们来认识今天准备的香粉。它们按照中医五行，对应不同的脏腑与情绪。</p>
+        <p className="text-base text-[rgb(120,120,120)] tracking-widest mb-8">在中医体系中，五行、脏腑与情绪紧密相连</p>
         <div className="flex gap-4 w-full mb-8">
           {[
             ['木', '肝', '怒', 'rgb(46,139,87)', 'rgba(46,139,87,0.07)', '怒气、烦躁、看什么都不顺眼'],
@@ -226,10 +267,10 @@ export const slides: SlideData[] = [
     )
   },
 
-  // Slide 9 - 金・肺・悲
+  // Slide 10 - 金・肺・悲
   {
-    id: 9,
-    partName: "四、情绪香粉",
+    id: 10,
+    partName: "四、认识情绪香粉",
     bgTint: "rgba(160,160,160,0.08)",
     content: (
       <div className="max-w-5xl mx-auto flex flex-col justify-center items-center text-center">
@@ -261,10 +302,10 @@ export const slides: SlideData[] = [
     )
   },
 
-  // Slide 10 - 木・肝・怒
+  // Slide 11 - 木・肝・怒
   {
-    id: 10,
-    partName: "四、情绪香粉",
+    id: 11,
+    partName: "四、认识情绪香粉",
     bgTint: "rgba(46,139,87,0.04)",
     content: (
       <div className="max-w-5xl mx-auto flex flex-col justify-center items-center text-center">
@@ -296,10 +337,10 @@ export const slides: SlideData[] = [
     )
   },
 
-  // Slide 11 - 水・肾・恐
+  // Slide 12 - 水・肾・恐
   {
-    id: 11,
-    partName: "四、情绪香粉",
+    id: 12,
+    partName: "四、认识情绪香粉",
     bgTint: "rgba(25,25,112,0.04)",
     content: (
       <div className="max-w-5xl mx-auto flex flex-col justify-center items-center text-center">
@@ -330,10 +371,10 @@ export const slides: SlideData[] = [
     )
   },
 
-  // Slide 12 - 火・心・喜
+  // Slide 13 - 火・心・喜
   {
-    id: 12,
-    partName: "四、情绪香粉",
+    id: 13,
+    partName: "四、认识情绪香粉",
     bgTint: "rgba(178,34,34,0.04)",
     content: (
       <div className="max-w-5xl mx-auto flex flex-col justify-center items-center text-center">
@@ -365,10 +406,10 @@ export const slides: SlideData[] = [
     )
   },
 
-  // Slide 13 - 土・脾・思
+  // Slide 14 - 土・脾・思
   {
-    id: 13,
-    partName: "四、情绪香粉",
+    id: 14,
+    partName: "四、认识情绪香粉",
     bgTint: "rgba(218,165,32,0.05)",
     content: (
       <div className="max-w-5xl mx-auto flex flex-col justify-center items-center text-center">
@@ -400,10 +441,10 @@ export const slides: SlideData[] = [
     )
   },
 
-  // Slide 14 - 选香原则
+  // Slide 15 - 选香原则
   {
-    id: 14,
-    partName: "四、情绪香粉",
+    id: 15,
+    partName: "四、认识情绪香粉",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center items-center text-center">
         <h2 className={textTitle}>选香原则</h2>
@@ -430,46 +471,10 @@ export const slides: SlideData[] = [
     )
   },
 
-  // Slide 15 - 互动一：情绪卡破冰
-  {
-    id: 15,
-    partName: "五、互动一・情绪卡",
-    content: (
-      <div className="max-w-4xl mx-auto flex flex-col justify-center">
-        <h2 className={textTitle}>情绪卡・破冰</h2>
-        <p className="text-lg text-[rgb(130,130,130)] tracking-widest mb-6 text-center">约 5-8 分钟</p>
-        <div className={textBody}>
-          <p className="mb-4">请看自己手边的情绪卡，上面写有：</p>
-          <div className="flex flex-wrap gap-3 mb-6 justify-center">
-            {['悲伤', '愤怒', '恐惧', '焦虑', '思虑', '孤独', '委屈', '压抑'].map((e, i) => {
-              const colors = ['rgb(100,100,100)', 'rgb(46,139,87)', 'rgb(25,25,112)', 'rgb(180,140,20)', 'rgb(178,34,34)', 'rgb(130,90,180)', 'rgb(160,80,40)', 'rgb(70,70,70)'];
-              return (
-                <span key={e} className="bg-white border rounded-full px-5 py-2 text-base font-bold tracking-widest" style={{ borderColor: `${colors[i]}40`, color: colors[i] }}>
-                  {e}
-                </span>
-              );
-            })}
-          </div>
-          <p className="mb-4 font-bold text-[rgb(44,44,44)]">和身边小伙伴简单分享两件事：</p>
-          <div className="flex flex-col gap-3">
-            <div className="flex gap-4 items-start bg-white border border-[rgb(235,235,235)] rounded-xl p-4 shadow-sm">
-              <span className="text-xl font-bold text-[#856d4d]">①</span>
-              <p>你最近有没有一个很小的瞬间，跟这个情绪有关？哪怕只是昨天等车时的一阵烦躁，或听到某首歌时的一阵难过。</p>
-            </div>
-            <div className="flex gap-4 items-start bg-white border border-[rgb(235,235,235)] rounded-xl p-4 shadow-sm">
-              <span className="text-xl font-bold text-[#856d4d]">②</span>
-              <p>如果用一个颜色、一个形状来形容这种情绪在你身体里的位置，它在哪里？胸口？喉咙？肩膀？还是胃？</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-  },
-
   // Slide 16 - 互动二：正念闻香
   {
     id: 16,
-    partName: "六、互动二・正念闻香",
+    partName: "五、互动环节二・正念闻香",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center items-center text-center">
         <h2 className={textTitle}>正念闻香</h2>
@@ -500,7 +505,7 @@ export const slides: SlideData[] = [
   // Slide 17 - 互动三：调香意图
   {
     id: 17,
-    partName: "七、互动三・立愿",
+    partName: "六、互动环节三・调香意图",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center items-center text-center">
         <h2 className={textTitle}>调香意图・立愿</h2>
@@ -529,7 +534,7 @@ export const slides: SlideData[] = [
   // Slide 18 - 香牌制作总览
   {
     id: 18,
-    partName: "八、香牌制作",
+    partName: "七、香牌制作",
     content: (
       <div className="max-w-5xl mx-auto flex flex-col justify-center items-center text-center">
         <h2 className={textTitle}>香牌制作・六步疗愈之旅</h2>
@@ -560,7 +565,7 @@ export const slides: SlideData[] = [
   // Slide 19 - 第一步：选方
   {
     id: 19,
-    partName: "八、香牌制作",
+    partName: "七、香牌制作",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center">
         <div className="flex items-baseline gap-4 mb-6">
@@ -588,7 +593,7 @@ export const slides: SlideData[] = [
   // Slide 20 - 第二步：和香
   {
     id: 20,
-    partName: "八、香牌制作",
+    partName: "七、香牌制作",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center">
         <div className="flex items-baseline gap-4 mb-6">
@@ -618,7 +623,7 @@ export const slides: SlideData[] = [
   // Slide 21 - 第三步：入模
   {
     id: 21,
-    partName: "八、香牌制作",
+    partName: "七、香牌制作",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center">
         <div className="flex items-baseline gap-4 mb-5">
@@ -654,7 +659,7 @@ export const slides: SlideData[] = [
   // Slide 22 - 第四步：打孔
   {
     id: 22,
-    partName: "八、香牌制作",
+    partName: "七、香牌制作",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center">
         <div className="flex items-baseline gap-4 mb-6">
@@ -677,7 +682,7 @@ export const slides: SlideData[] = [
   // Slide 23 - 第五步：阴干
   {
     id: 23,
-    partName: "八、香牌制作",
+    partName: "七、香牌制作",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center">
         <div className="flex items-baseline gap-4 mb-6">
@@ -712,7 +717,7 @@ export const slides: SlideData[] = [
   // Slide 24 - 第六步：穿绳
   {
     id: 24,
-    partName: "八、香牌制作",
+    partName: "七、香牌制作",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center items-center text-center">
         <div className="flex items-baseline gap-4 mb-7">
@@ -732,7 +737,7 @@ export const slides: SlideData[] = [
   // Slide 25 - 祝福仪式
   {
     id: 25,
-    partName: "九、收尾祝福仪式",
+    partName: "八、收尾祝福仪式",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center items-center text-center">
         <h2 className={textTitle}>祝福仪式</h2>
@@ -761,6 +766,7 @@ export const slides: SlideData[] = [
   // Slide 26 - 结尾
   {
     id: 26,
+    partName: "九、总结收尾",
     content: (
       <div className="max-w-4xl mx-auto flex flex-col justify-center items-center text-center">
         <h2 className="text-5xl font-bold text-[rgb(44,44,44)] tracking-[0.3em] mb-6">携香而行，心有安宁</h2>
@@ -787,4 +793,5 @@ export const slides: SlideData[] = [
       </div>
     )
   }
+
 ];
